@@ -1,16 +1,18 @@
 #include <stdio.h>
+#include "main.h"
 #include "bar.h"
 
 char user_input[20];
 char name[20];
+char *main(int);
 
 void bar() {
     // The name can be useful for the future, I promise, I don't sell your data. It's for the game purpose. Trust me ;)
     printf("Your name?\n");
     printf("> ");
     scanf("%s", name);
-    printf("Okay, your name is: %s", name "\n\n");
-    printf("System: It's 8:00PM, you decided to go to your favourite place: the 'Foo-Bar'.\n");
+    printf("Okay, your name is: %s", name);
+    printf("\n\nSystem: It's 8:00PM, you decided to go to your favourite place: the 'Foo-Bar'.\n");
     printf("System: You go to the bar, the barman ask:\n");
     printf("Barman: Hey%s", name, "! What do you want this time?\n");
     printf("System: You can choose the following list: \n");
@@ -33,8 +35,7 @@ void bar() {
             printf("Barman: Wine here you go!");
         default:
             printf(name, ": Nothing.");
-            printf("Barman: Nothing? Are you okay my friend?")
+            printf("Barman: Nothing? Are you okay my friend?");
         }
     }
-    
 }

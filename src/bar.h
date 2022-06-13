@@ -2,7 +2,6 @@
 #define BAR_H
 
 char name[20];
-
-void bar();
+char *bar (void);
 
 #endif
