@@ -6,6 +6,13 @@ PROG4=vodka
 PROG5=mojito
 PROG6=wine
 
+${PROG}:
+	echo "WARNING: You need to specific a option."
+	echo "Options available are:"
+	echo "- make install"
+	echo "- make uninstall"
+	echo "- make extract"
+
 ${PROG}:install
 	${CC} -o ${PROG} ${PROG}.c ${PROG1}.c ${PROG2}.c ${PROG3}.c ${PROG4}.c ${PROG5}.c ${PROG6}.c
 	sudo mv ${PROG} /usr/local/bin
